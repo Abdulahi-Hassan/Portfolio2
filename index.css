@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-bg: #2c2837;
+    --back: #bac1fb;
+    --text-color: #fff;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--main-bg);
+}
+
+.container {
+    max-width: 94%;
+    width: 100%;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.header {
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 90%;
+}
+
+.navbar ul li a {
+    color: var(--text-color);
+    font-size: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1.3px;
+    transition: 0.5s ease;
+    margin-left: 34px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    padding: 8px 0;
+    margin: 24px 0
+}
+
+.logo {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.navbar ul li a:hover,
+.navbar .active {
+    background-color: var(--main-bg);
+    color: var(--back);
+}
+
+#menu-icon {
+    color: var(--text-color);
+    font-size: 40px;
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--main-bg);
+        width: 100%;
+        padding: 10% 0;
+    }
+    #menu-icon {
+        display: block;
+        margin-right: 25px;
+        margin-top: 12px;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .navbar.active ul {
+        display: block;
+    }
+    .home {
+        padding-top: 10%;
+    }
+}
+
+span {
+    color: var(--back)
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 33px;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-text {
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-color)
+}
+
+.home-text h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.home-text h2 {
+    font-size: 33px;
+    margin-bottom: 7px;
+}
+
+.home-text p {
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.btn {
+    line-height: 50px;
+    padding: 12px 15px;
+    background-color: var(--back);
+    text-decoration: none;
+    width: 100%;
+    border-radius: 14px;
+    transition: 0.4 ease;
+}
+
+.btn:hover {
+    color: var(--text-color);
+    background-color: var(--main-bg);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.about-img img {
+    width: 40vw;
+}
+
+.about-content {
+    text-align: center;
+    color: var(--text-color)
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 32px;
+}
