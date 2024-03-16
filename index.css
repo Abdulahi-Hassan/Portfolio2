@@ -322,10 +322,11 @@ input,textarea{
     .home{
         display: block;
         order:2;
-        padding:50% 0;
+        padding:90% 0;
+        order:-1
     }
     .home-text{
-        order:2
+        order:-1
     }
     .about{
         padding:1px 3%;
@@ -337,10 +338,13 @@ input,textarea{
         display: grid;
         grid-template-columns: 1fr;
         gap:10px;
+        order:2
     }
     .services-box{
         border-radius: 23px;
         width: 100%;
+        margin:auto;
+
     }
     
 }
