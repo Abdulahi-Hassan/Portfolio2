@@ -268,12 +268,16 @@ input,textarea{
     #menu-icon{
         display: block;
     }
-    .navbar{
+    .navbar ul{
         position: absolute;
         top:100%;
-        width: 100%;
         left:0;
-        background-color:var(--bg-color);
+        width: 100%;
+        padding:1rem 3%;
+        background-color: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem rgba(0, 0, 0, .2);
+
 
     }
     .navbar ul{
@@ -284,12 +288,59 @@ input,textarea{
         text-align: center;
         font-size: 17px;
         display: none;
+        margin:12px 0
         
     }
     .navbar.active ul li a{
         display: block;
+
     }
     .header{
         padding-top: 32px;
+        background-color: red;
     }
+    .services{
+        padding:12px 5%;
+    }
+    .services-box:hover{
+        border: 2px solid var(--bg-color);
+        transform: translateY(-4%);
+    }
+    .services-box{
+        text-align: center;
+        border-radius: 10px;
+        background-color: var(--main-color);
+        margin: 10px;
+        padding:10px;
+        transition: 0.5s ease;
+        transform: translateY(5%)
+    
+    }
+}
+
+@media screen and (max-width:600px){
+    .home{
+        display: block;
+        order:2;
+        padding:50% 0;
+    }
+    .home-text{
+        order:2
+    }
+    .about{
+        padding:1px 3%;
+        display: block;
+        width: 100%;
+        gap:10px;
+    }
+    .servies-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:10px;
+    }
+    .services-box{
+        border-radius: 23px;
+        width: 100%;
+    }
+    
 }
